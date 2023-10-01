@@ -26,6 +26,9 @@
     .header-content__caption{
         max-width: 50rem;
     }
+    .service {
+        width: 26rem;
+    }
 }
 
 @media (min-width: 1200px) {
