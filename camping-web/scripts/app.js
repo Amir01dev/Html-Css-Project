@@ -1,5 +1,6 @@
 const navBtn = document.querySelector(".nav__btn")
 const navMenu = document.querySelector(".nav-menu")
+const like = document.querySelector(".place__like-icon")
 
 
 let navOpen = false;

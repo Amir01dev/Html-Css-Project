@@ -296,10 +296,12 @@ a{
     margin-top: -10rem;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 .service{
     background-color: var(--white);
-    width: 30rem;
+    width: 32rem;
     height: 26rem;
     border-radius: 2rem;
     text-align: center;
@@ -341,11 +343,21 @@ a{
     margin: 3rem auto;
 }
 .destinations__places{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 .place{
     background-color: var(--white);
     border-radius: 2rem;
     padding: 3rem;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    width: 32rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    flex-grow: 1;
 }
 .place__banner{
     position: relative;
@@ -374,6 +386,10 @@ a{
 .place__like-icon{
 
 }
+.place__like-icon--active{
+    fill: var(--orange);
+    stroke: var(--white);
+}
 .place__price{
     background-color: var(--white);
     position: absolute;
@@ -386,18 +402,23 @@ a{
     border-radius: 1rem;
 
 }
-.place__price-text{
+.place__price-text {
     font-family: var(--primary-font-md);
     color: var(--orange);
-
+}
 .place__title {
-
+    font-family: var(--archivo-black);
+    margin-top: 3rem;
+    margin-bottom: .5rem;
 }
 .place__caption {
-
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
 }
 .place__link {
-
+    color: #8D8D8D;
+    background-color: rgba(141, 141, 141, .1);
 }
 .destinations__btn{
     color: var(--orange);
