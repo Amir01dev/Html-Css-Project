@@ -3,8 +3,9 @@
     --white: white;
     --grey: #D2D2D2;
     --dark: #3B3735;
+    --app-bg: #FAF4F2;
     --robot-regular: "Roboto Reqular", sans-serif, Arial;
-    --robot-medium: "Roboto Reqular", sans-serif, Arial;
+    --robot-medium: "Roboto Medium", sans-serif, Arial;
     --archivo-black: "Archivo Black", sans-serif, Arial;
 }
 html {
@@ -334,7 +335,8 @@ a{
     padding: 6rem 0;
 }
 .destinations__logo{
-
+    width: 8rem;
+    height: 8rem;
 }
 .destinations__title{
     font-family: var(--archivo-black);
@@ -342,22 +344,25 @@ a{
     max-width: 36rem;
     margin: 3rem auto;
 }
+
+
 .destinations__places{
     display: flex;
     flex-wrap: wrap;
-    margin-right: -1rem;
     margin-left: -1rem;
+    margin-right: -1rem;
 }
 .place{
     background-color: var(--white);
     border-radius: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     color: var(--dark);
     margin-bottom: 2rem;
-    width: 32rem;
     margin-right: 1rem;
     margin-left: 1rem;
+    width: 30rem;
     flex-grow: 1;
+    overflow: hidden;
 }
 .place__banner{
     position: relative;
@@ -384,16 +389,14 @@ a{
     cursor: pointer;
 }
 .place__like-icon{
-
 }
-.place__like-icon--active{
+.place__like-icon--fill{
     fill: var(--orange);
-    stroke: var(--white);
 }
 .place__price{
     background-color: var(--white);
     position: absolute;
-    bottom: -1rem;
+    bottom: -0.8rem;
     left: 0;
     right: 0;
     width: 12rem;
@@ -402,23 +405,26 @@ a{
     border-radius: 1rem;
 
 }
-.place__price-text {
-    font-family: var(--primary-font-md);
+.place__price-text{
+    font-family: var(--robot-medium);
     color: var(--orange);
+    text-align: center;
 }
-.place__title {
+.place__title{
     font-family: var(--archivo-black);
     margin-top: 3rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
-.place__caption {
-    max-width: 30rem;
-    margin: 0 auto;
+.place__caption{
     margin-bottom: 3rem;
 }
-.place__link {
+.place__link{
     color: #8D8D8D;
-    background-color: rgba(141, 141, 141, .1);
+    background-color: rgba(141,141,141,0.1);
 }
 .destinations__btn{
     color: var(--orange);
@@ -426,8 +432,51 @@ a{
     background-color: transparent;
     transition: all 100ms ease-in;
     margin-top: 3rem;
+
 }
 .destinations__btn:hover{
-    color: var(--white);
+    color: var(--app-bg);
     background-color: var(--orange);
+}
+
+/* -- NewsLetter -- */
+.newsletter {
+    background-color: #F8E1DB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+.newsletter__content {
+}
+.newsletter__title {
+    font-family: var(--archivo-black);
+    font-size: 4rem;
+}
+.newsletter__caption {
+    width: 50rem;
+    font-family: var(--robot-medium);
+}
+.newsletter__email-box {
+}
+.newsletter__email-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.newsletter__email-input {
+    position: relative;
+    width: 100%;
+}
+.newsletter__submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.newsletter__banner {
+}
+.newsletter__img {
+
 }
