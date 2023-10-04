@@ -443,40 +443,33 @@ a{
 .newsletter {
     background-color: #F8E1DB;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 6rem;
+    flex-direction: column-reverse;
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--dark);
+    border-radius: 2rem;
 }
 .newsletter__content {
 }
 .newsletter__title {
     font-family: var(--archivo-black);
-    font-size: 4rem;
+    font-size: 3rem;
+    max-width: 16rem;
+    margin: 1.5rem auto;
 }
 .newsletter__caption {
-    width: 50rem;
     font-family: var(--robot-medium);
 }
 .newsletter__email-box {
 }
 .newsletter__email-icon {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
 }
 .newsletter__email-input {
-    position: relative;
-    width: 100%;
 }
 .newsletter__submit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
 }
 .newsletter__banner {
 }
 .newsletter__img {
-
+    width: 100%;
 }
