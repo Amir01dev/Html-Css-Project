@@ -454,7 +454,6 @@ a{
 .newsletter__title {
     font-family: var(--archivo-black);
     font-size: 3rem;
-    max-width: 16rem;
     margin: 1.5rem auto;
 }
 .newsletter__caption {
