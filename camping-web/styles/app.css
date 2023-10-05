@@ -508,9 +508,10 @@ a{
     background-color: #F8E1DB;
     border-top-left-radius: 10rem;
     border-top-right-radius: 10rem;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
     color: var(--dark);
+    margin-top: 10rem;
 }
 .footer__wrapper {
     display: flex;
@@ -546,6 +547,7 @@ a{
 }
 .footer-list {
     width: 18rem;
+    margin-left: 1rem;
 }
 .footer__title {
 
@@ -561,4 +563,9 @@ a{
 }
 .footer-pages__link:hover {
     text-decoration: underline;
+}
+
+.footer__copy-right {
+    text-align: center;
+    margin-top: 2rem;
 }
