@@ -537,6 +537,7 @@ a{
     justify-content: center;
     flex-shrink: 0;
     cursor: pointer;
+    box-shadow: 10px 5px 30px rgba(231, 111, 81, .4);
 }
 .newsletter__banner {
 }
@@ -572,6 +573,7 @@ a{
     top: -2.5rem;
     left: 0;
     margin: 0 auto;
+    box-shadow: 10px 5px 30px rgba(59, 55, 53, .05);
 }
 
 .footer__wrapper{
