@@ -44,6 +44,14 @@
     .newsletter__banner{
         flex-basis: 40%;
     }
+    .newsletter::before {
+        width: auto;
+        height: auto;
+        top: -5rem;
+        left: -40rem;
+        background-size: auto;
+        background-position: center left;
+    }
 }
 
 @media (min-width: 992px) {
@@ -75,6 +83,10 @@
     .footer__scroll{
         left: auto;
     }
+    .newsletter::before {
+        top: -10rem;
+        left: -30rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -95,6 +107,10 @@
     .footer-list{
         margin-bottom: 0;
         margin-left: 2rem;
+    }
+    .newsletter::before{
+        top: -15rem;
+        left: -15rem;
     }
 }
 

@@ -129,6 +129,7 @@ a{
     width: 25rem;
     padding: 2.5rem;
     transition: all 150ms ease-in-out;
+    z-index: 100;
 }
 .nav-menu--open {
     left: 0;
@@ -449,8 +450,24 @@ a{
     text-align: center;
     color: var(--dark);
     border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
 }
-.newsletter__content {
+.newsletter::before {
+    content: '';
+    position: absolute;
+    top: 15rem;
+    left: -20rem;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/svgs/shape3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50rem;
+    height: 50rem;
+}
+.newsletter__content, .newsletter__banner {
+    z-index: 2;
 }
 .newsletter__title {
     font-family: var(--archivo-black);
