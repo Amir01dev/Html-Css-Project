@@ -23,6 +23,7 @@ body {
     font-size: 1.6rem;
     font-family: var(--robot-regular);
     background-color: #FAF4F2;
+    overflow-x: hidden;
 }
 
 /* -- Reset Style -- */
@@ -335,6 +336,27 @@ a{
 .destinations{
     text-align: center;
     padding: 6rem 0;
+    position: relative;
+}
+.destinations::before,
+.destinations::after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60rem;
+    height: 60rem;
+    z-index: -2;
+}
+.destinations::before {
+    background-image: url("../images/svgs/shape1.svg");
+    left: -45rem;
+    bottom: 40rem;
+}
+.destinations::after {
+    background-image: url("../images/svgs/shape2.svg");
+    right: -45rem;
+    top: -10rem;
 }
 .destinations__logo{
     width: 8rem;
