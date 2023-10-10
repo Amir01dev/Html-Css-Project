@@ -1,28 +1,27 @@
-@media (min-width: 576px) {
-    .container {
-        width: 54rem;
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav__logo {
+        font-size: 5rem;
+    }
+
+    .menu__item {
+        margin-right: 2rem;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 72rem;
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu__toggle-icon {
+        display: block;
     }
 }
 
-@media (min-width: 992px) {
-    .container {
-        width: 96rem;
-    }
-}
+@media screen and (max-width: 576px) {
 
-@media (min-width: 1200px) {
-    .container {
-        width: 114rem;
-    }
-}
-@media (min-width: 1400px) {
-    .container {
-        width: 137rem;
-    }
 }

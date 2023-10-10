@@ -39,19 +39,19 @@ body {
 .header {
     padding: 1rem 0;
     background-color: #fff;
+    box-shadow: 0 3px 59px rgba(4, 195, 255, .16);
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*box-shadow: 0 3px 59px rgba(4, 195, 255, .16);*/
 }
 
 .nav__logo {
     color: var(--primary-color);
     font-family: "Poppins Black";
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 0;
 }
 
@@ -82,5 +82,25 @@ body {
 }
 
 .menu__toggle-line {
+    position: relative;
+}
 
+.menu__toggle-line,
+.menu__toggle-line::before,
+.menu__toggle-line::after {
+    content: " ";
+    width: 4.5rem;
+    height: .4rem;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+}
+
+.menu__toggle-line::before {
+    position: absolute;
+    top: 1rem;
+}
+
+.menu__toggle-line::after {
+    position: absolute;
+    top: -1rem;
 }
