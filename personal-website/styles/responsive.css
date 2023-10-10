@@ -18,7 +18,7 @@
     }
 
     .menu__toggle-icon {
-        display: block;
+        display: flex;
     }
 }
 

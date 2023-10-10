@@ -38,7 +38,7 @@ body {
 /* Header Style */
 .header {
     padding: 1rem 0;
-    background-color: #fff;
+    background-color: var(--section-bg-color);
     box-shadow: 0 3px 59px rgba(4, 195, 255, .16);
 }
 
@@ -79,10 +79,15 @@ body {
 
 .menu__toggle-icon {
     display: none;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu__toggle-line {
     position: relative;
+    transition: all 100ms ease-in;
 }
 
 .menu__toggle-line,
@@ -97,10 +102,24 @@ body {
 
 .menu__toggle-line::before {
     position: absolute;
-    top: 1rem;
+    bottom: 1rem;
+    transition: all 150ms ease-in;
 }
 
 .menu__toggle-line::after {
     position: absolute;
-    top: -1rem;
+    top: 1rem;
+    transition: all 150ms ease-in;
+}
+.menu__toggle-icon--open .menu__toggle-line{
+    background-color: transparent;
+}
+.menu__toggle-icon--open .menu__toggle-line::before {
+    transform: translateY(1rem) rotate(45deg);
+
+}
+
+.menu__toggle-icon--open .menu__toggle-line::after {
+    transform: translateY(-1rem) rotate(-45deg);
+
 }
