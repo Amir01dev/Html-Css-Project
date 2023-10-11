@@ -40,6 +40,10 @@ body {
     padding: 1rem 0;
     background-color: var(--section-bg-color);
     box-shadow: 0 3px 59px rgba(4, 195, 255, .16);
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 .nav {
@@ -71,6 +75,10 @@ body {
     display: block;
     color: var(--text-color);
     font-family: "Poppins Medium";
+    transition: color 150ms ease-in;
+}
+.menu__link:hover {
+    color: var(--primary-color);
 }
 
 .menu__link--active {
@@ -111,9 +119,11 @@ body {
     top: 1rem;
     transition: all 150ms ease-in;
 }
-.menu__toggle-icon--open .menu__toggle-line{
+
+.menu__toggle-icon--open .menu__toggle-line {
     background-color: transparent;
 }
+
 .menu__toggle-icon--open .menu__toggle-line::before {
     transform: translateY(1rem) rotate(45deg);
 
