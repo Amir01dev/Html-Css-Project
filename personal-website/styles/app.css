@@ -4,7 +4,6 @@
 
 :root {
     --text-color: #333333;
-    --shadow-color: rgba(19, 182, 255, 0.24);
     --app-bg-color: #fff;
     --section-bg-color: #fff;
     --primary-color: #0ABEAD;
@@ -25,8 +24,28 @@ ul {
     padding-left: 0;
 }
 
-h2, h3, p{
-    margin: 0;
+/* -- component-- */
+.app-btn {
+    width: 16rem;
+    height: 5rem;
+    font-family: "Poppins SemiBold";
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1.6rem 2.9rem rgba(11, 190, 173, 40%);
+}
+
+.app-btn--orange {
+    background-color: var(--secondary-color);
+    box-shadow: 0 1.6rem 2.8rem rgba(245, 137, 23, 24%);
+}
+
+/* -- Helper Classes -- */
+.align-items-center {
+    align-items: center;
 }
 
 /* -- App -- */
@@ -38,6 +57,8 @@ body {
     font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--app-bg-color);
 }
 
 /* Header Style */
@@ -82,6 +103,7 @@ body {
     font-family: "Poppins Medium";
     transition: color 150ms ease-in;
 }
+
 .menu__link:hover {
     color: var(--primary-color);
 }
@@ -137,4 +159,64 @@ body {
 .menu__toggle-icon--open .menu__toggle-line::after {
     transform: translateY(-1rem) rotate(-45deg);
 
+}
+
+/* -- Main -- */
+.main {
+    padding-top: 12rem;
+}
+
+/* -- Home Style -- */
+.home {
+    margin-top: 8rem;
+}
+
+.home__content {
+
+}
+
+.home__name {
+    color: var(--primary-color);
+    font-family: "Poppins SemiBold";
+    font-size: 2rem;
+    margin: 0;
+}
+
+.home__name span {
+    color: var(--secondary-color);
+}
+
+.home__title {
+    font-family: "Poppins Bold";
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.home__caption {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.home__links-wrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.home_link {
+}
+
+.home_link {
+
+}
+
+.home__photo {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 100%;
+    background-image: url("../images/header-avatar.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    box-shadow: 0 0 5.9rem rgba(96, 233, 255, 27%);
+    border: 2rem solid #fff;
 }
