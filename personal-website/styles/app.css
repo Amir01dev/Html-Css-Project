@@ -314,6 +314,7 @@ body {
     background-color: var(--section-bg-color);
     box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
     margin-top: 5rem;
+    min-height: 62rem;
 }
 
 .about__cover {
@@ -322,6 +323,8 @@ body {
 
 .about__img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about__content {
@@ -338,7 +341,7 @@ body {
 
 .about__description {
     margin-top: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 .about__list-title {
@@ -351,6 +354,7 @@ body {
 
 .about-list {
     margin-bottom: 3rem;
+    margin-left: 1rem;
 }
 
 .about-list__item {
