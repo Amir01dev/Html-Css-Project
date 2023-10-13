@@ -17,7 +17,6 @@
     .home{
         height: 68rem;
     }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -42,9 +41,17 @@
     .home{
         margin-top: 6rem;
         background-image: none;
+        height: auto;
     }
     .home .row{
         flex-direction: column-reverse;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about__content,
+    .about__cover {
+        flex-basis: auto;
     }
 }
 
@@ -96,6 +103,9 @@
         height: 34rem;
         border-width: 1.5rem;
     }
+    .about__content {
+        padding: 2rem 4rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -108,7 +118,9 @@
     .home__photo{
         width: 30rem;
         height: 30rem;
-
+    }
+    .about__link {
+        width: 100%;
     }
 }
 
@@ -117,7 +129,6 @@
         font-size: 3rem;
     }
     .home__links-wrapper{
-        gap: 2rem;
         width: 100%;
     }
     .home__link{
